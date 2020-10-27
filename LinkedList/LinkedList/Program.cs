@@ -10,6 +10,7 @@ namespace LinkedList
             list.Append(56);
             list.Append(30);
             list.Append(70);
+            list.Insert(4, 40);
             list.Display();
         }
     }

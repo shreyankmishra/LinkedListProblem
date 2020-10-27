@@ -24,7 +24,7 @@ namespace LinkedList
                 head = node;
             }
         }
-        internal void Append(int item)
+        public void Append(int item)
         {
             Node node = new Node(item);
             if (head == null)
@@ -39,7 +39,7 @@ namespace LinkedList
                 temp.next = node;
             }
         }
-        internal void Insert(int position, int item)
+        public void Insert(int position, int item)
         {
             Node node = new Node(item);
             if (position < 1)
@@ -82,7 +82,7 @@ namespace LinkedList
                 return popped;
             }
         }
-        internal Node RemoveLastNode()
+         internal Node RemoveLastNode()
         {
             if (head == null)
             {
@@ -117,7 +117,7 @@ namespace LinkedList
                 return false;
             }
         }
-        internal void Display()
+        public void Display()
         {
             if (head == null)
                 System.Console.WriteLine("List is Empty");

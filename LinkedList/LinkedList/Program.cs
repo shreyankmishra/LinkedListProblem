@@ -12,11 +12,6 @@ namespace LinkedList
             list.Append(70);
             list.Insert(4, 40);
             list.Display();
-            //Node p = list.Pop();
-            //System.Console.WriteLine(p.data);
-            list.RemoveLastNode();
-            Console.WriteLine("\n");
-            list.Display();
         }
     }
 }

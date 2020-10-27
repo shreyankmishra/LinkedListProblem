@@ -4,14 +4,14 @@ using System.Text;
 
 namespace LinkedList
 {
-    class LinkedLists
+   public class LinkedLists
     {
         internal Node head;
         public LinkedLists()
         {
             this.head = null;
         }
-        internal void Add(int item)
+        public void Add(int item)
         {
             Node node = new Node(item);
             if (head == null)
@@ -99,6 +99,22 @@ namespace LinkedList
                 Node removedNode = temp.next;
                 temp.next = null;
                 return removedNode;
+            }
+        }
+        public bool Search(int item)
+        {
+            if (head == null)
+                return false;
+            else
+            {
+                Node temp = head;
+                while (temp != null)
+                {
+                    if (temp.data == item)
+                        return true;
+                    temp = temp.next;
+                }
+                return false;
             }
         }
         internal void Display()

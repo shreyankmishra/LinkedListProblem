@@ -6,12 +6,12 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            LinkedLists list = new LinkedLists();
-            list.Append(56);
-            list.Append(30);
-            list.Append(70);
-            list.Insert(4, 40);
-            list.Display();
+            SortedLinkedLists sorted = new SortedLinkedLists();
+            sorted.Add(56, sorted);
+            sorted.Add(30, sorted);
+            sorted.Add(40, sorted);
+            sorted.Add(70, sorted);
+            sorted.Display();
         }
     }
 }
